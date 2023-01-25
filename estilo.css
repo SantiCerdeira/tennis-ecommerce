@@ -1,0 +1,408 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap'); 
+
+/**	General */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/*	BODY */
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* H */
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat';
+    font-size: 3.6em;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2,
+h3 {
+    margin: 1em 0;
+    font-size: 3em;
+    color: #000000;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0em 2em 4em;
+    background-color: #fff;
+}
+
+#modalCarrito ul,
+main ul,
+ol {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+p,
+#modalCarrito ul li,
+main ul li,
+ol li {
+    font-size: 2.4em;
+    line-height: 1.5;
+    text-align: left;
+    color: #000000;
+}
+
+#modalCarrito ul li {
+    font-size: 2.4em;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+}
+
+#modalCarrito ul li,
+main ul li,
+ol li {
+    margin-left: 2em;
+}
+
+p strong,
+p em,
+p span,
+p a,
+#modalCarrito ul li strong,
+main ul li strong,
+#modalCarrito ul li em,
+main ul li em,
+#modalCarrito ul li a,
+main ul li a,
+ol li strong,
+ol li em,
+ol li a {
+    font-size: 1em;
+}
+
+p a,
+main ul li a,
+ol li a {
+    color: #134f5c;
+}
+
+p strong,
+#modalCarrito ul li strong,
+main ul li strong,
+ol li strong {
+    font-weight: 700;
+}
+
+p em,
+main ul li em,
+ol li em {
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 2.4em;
+    line-height: 1.5;
+    text-align: left;
+    color: #134f5c;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0.5em 0;
+    padding: 1em 2em;
+}
+
+legend {
+    padding: 0 0.5em;
+    font-size: 1.6em;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: left;
+    color: #134f5c;
+}
+
+input {
+    margin: 0.5em 0;
+    border: 1px solid #134f5c;
+    border-radius: 0.5em;
+    padding: 0 1em;
+    font-size: 2.4em;
+    line-height: 1.5;
+    text-align: left;
+    color: #134f5c;
+}
+
+button,
+input[type='button'],
+input[type='submit'] {
+    margin: 0.5em 0;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    padding: 0.25em 0.5em;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 2.4em;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
+}
+
+input[type='button']:disabled,
+input[type='submit']:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+form textarea {
+    margin: 0.5em 0;
+    border-radius: 0.5em;
+    border: 1px solid #134f5c;
+    padding: 0 0.5em;
+    background: #d0e0e3;
+    font-size: 1.6em;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: left;
+    color: #134f5c;
+}
+
+form select {
+    margin: 0.5em 0;
+    border-radius: 0.5em;
+    border: 1px solid #134f5c;
+    padding: 0 0.5em;
+    background: #d0e0e3;
+    font-size: 1.6em;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: left;
+    color: #134f5c;
+}
+
+hr {
+    margin: 1em 0%;
+    width: 100%;
+    height: 0.1em;
+}
+
+footer {
+    padding: 2rem;
+}
+
+footer ul li {
+    color: black;
+    font-size: 2.5rem;
+}
+
+button:hover,
+input[type='button']:hover,
+input[type='submit']:hover {
+    color: #fff;
+    background-color: black;
+    transition: 0.5s;
+}
+
+/**	Carrito */
+#minicarrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:5px ;
+    padding: 1.5em 2em;
+    width: 96%;
+    margin:auto;
+}
+
+#minicarrito a {
+    text-decoration: none;
+    color: black;
+}
+
+#minicarrito a:hover {
+    color: white;
+    background-color: none;
+    transition: 0.5s;
+}
+
+i {
+    font-size: 4rem;
+    color: #000000;
+}
+
+i:hover {
+    color: rgb(84, 84, 84);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#banner {
+    width: 96%;
+    margin:auto;
+}
+
+#banner img {
+    max-height: 600px ;
+}
+
+#productos button {
+    width: 60%;
+    margin: 1rem auto;
+}
+
+#productos img {
+    width: 90%;
+    margin: 1em 5%;
+}
+
+#productos div div {
+    padding: 0;
+}
+
+#productos h3,
+#productos p {
+    margin: 0;
+    text-align: center;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal a {
+    text-decoration: none;
+    color: #d0e0e3;
+}
+
+.modal a.cerrar {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 1em;
+    right: 1em;
+    border-radius: 2.5em;
+    width: 5em;
+    height: 5em;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    color: #1a4a5e;
+    text-decoration: none;
+}
+
+.modal a.cerrar:hover {
+    background-color: #1a4a5e;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#modalCompra div {
+    max-width: 50%;
+}
+
+#formulario {
+    margin-bottom: 8rem;
+}
+
+textarea, select, input {
+    width: 100%;
+    height: 7%;
+    font-size: 2rem;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 7px rgba(255, 255, 255, 0.523);
+}
+
+#confirmacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    max-width: 60%;
+    height: 450px;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    color: black;
+    margin-top: 15rem;
+}
+
+#confirmacion button {
+    max-width: 80%;
+    margin: 2rem auto;
+}
+
+.modal h3,
+.modal p,
+.modal li {
+    margin: 0;
+    text-align: center;
+    color: #d0e3d4;
+}
+
+.modal li {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.25em 0;
+    width: 90%;
+}
+
+.modal li span {
+    font-size: 1em;
+}
+
+.color {
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 62%, rgba(255,250,114,1) 98%);
+    box-shadow: 2px 2px 5px rgb(157, 157, 157);
+}
+
+#galeria img:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1100px) {
+    footer ul {
+        flex-direction: row;
+    } 
+}
